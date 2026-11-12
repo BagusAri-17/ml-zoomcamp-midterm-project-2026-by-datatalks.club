@@ -1,0 +1,24 @@
+# Python & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Large datasets or downloads (optional, but keep data/ committed if < 20MB)
+# data/*.zip
+
+# Project internal documentation
+step-by-step.md
