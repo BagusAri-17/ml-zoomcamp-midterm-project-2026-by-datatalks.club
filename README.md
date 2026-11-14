@@ -254,7 +254,7 @@ For educational purposes and further exploration of the concepts implemented in 
    - [Machine Learning Mastery: A Gentle Introduction to XGBoost](https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning/)
 
 4. **Hyperparameter Tuning & Cross-Validation:**
-   - [GeeksforGeeks: Hyperparameter Tuning using GridSearchCV](https://www.geeksforgeeks.org/cross-validation-and-hyperparameter-tuning/)
+   - [GeeksforGeeks: Hyperparameter Tuning in Machine Learning](https://www.geeksforgeeks.org/hyperparameter-tuning/)
    - [Scikit-Learn: Tuning the Hyperparameters of an Estimator](https://scikit-learn.org/stable/modules/grid_search.html)
 
 5. **Model Evaluation Metrics (ROC-AUC, Precision, Recall):**
