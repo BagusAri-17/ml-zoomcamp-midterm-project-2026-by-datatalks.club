@@ -1,0 +1,15 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+.ipynb_checkpoints/
+step-by-step.md
+.DS_Store
+docs/
+data/
+notebooks/
+
