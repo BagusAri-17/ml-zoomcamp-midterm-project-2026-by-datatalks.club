@@ -207,16 +207,21 @@ curl -X POST "http://localhost:9696/predict" \
 
 ## ☁️ 9. Cloud Deployment
 
-The containerized service will be deployed to a cloud platform (e.g., Render.com / Fly.io).
+The containerized service has been deployed and publicly tested using a cloud container environment (**GitHub Codespaces hosted on Microsoft Azure**):
 
-* **Live Base URL:** `https://<your-service-name>.onrender.com`
-* **Health Check:** `GET /health`
-* **Inference Endpoint:** `POST /predict`
+* **Live Base URL:** `https://glowing-cod-p5qpgqxpp97h67gg-9696.app.github.dev`
+* **Health Check:** `GET https://glowing-cod-p5qpgqxpp97h67gg-9696.app.github.dev/health`
+* **Inference Endpoint:** `POST https://glowing-cod-p5qpgqxpp97h67gg-9696.app.github.dev/predict`
 
 ### Verification Proof (Screenshot):
-*(A screenshot of the successful prediction test against the live cloud endpoint will be added below)*:
+Below is the verification screenshot showing the test script (`test_service.py`) successfully sending requests to the public cloud endpoint and receiving `200 OK` predictions for both high-risk and low-risk student profiles:
 
-![Cloud Deployment Test Proof](docs/cloud_test_proof.png)
+![Cloud Deployment Test Proof](docs/deployment-result.png)
+
+```bash
+# How to run verification test against the cloud endpoint:
+python test_service.py https://glowing-cod-p5qpgqxpp97h67gg-9696.app.github.dev
+```
 
 ---
 
@@ -229,3 +234,29 @@ The containerized service will be deployed to a cloud platform (e.g., Render.com
    - Integrate time-series course interaction telemetry to detect disengagement mid-semester.
    - Build a lightweight frontend dashboard (Streamlit / React) for academic advisors to inspect batch student cohorts.
 
+---
+
+## 📚 11. Learning Resources & References
+
+For educational purposes and further exploration of the concepts implemented in this project:
+
+1. **Logistic Regression:**
+   - [GeeksforGeeks: Understanding Logistic Regression](https://www.geeksforgeeks.org/understanding-logistic-regression/)
+   - [Scikit-Learn: Logistic Regression Guide](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
+
+2. **Random Forest Classifier:**
+   - [GeeksforGeeks: Random Forest Classifier using Scikit-Learn](https://www.geeksforgeeks.org/random-forest-classifier-using-scikit-learn/)
+   - [Scikit-Learn: Forest of Randomized Trees](https://scikit-learn.org/stable/modules/ensemble.html#forests-of-randomized-trees)
+
+3. **XGBoost (Extreme Gradient Boosting):**
+   - [GeeksforGeeks: XGBoost Algorithm in Machine Learning](https://www.geeksforgeeks.org/xgboost/)
+   - [Official Documentation: XGBoost Python Package](https://xgboost.readthedocs.io/en/stable/)
+   - [Machine Learning Mastery: A Gentle Introduction to XGBoost](https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning/)
+
+4. **Hyperparameter Tuning & Cross-Validation:**
+   - [GeeksforGeeks: Hyperparameter Tuning using GridSearchCV](https://www.geeksforgeeks.org/cross-validation-and-hyperparameter-tuning/)
+   - [Scikit-Learn: Tuning the Hyperparameters of an Estimator](https://scikit-learn.org/stable/modules/grid_search.html)
+
+5. **Model Evaluation Metrics (ROC-AUC, Precision, Recall):**
+   - [GeeksforGeeks: Confusion Matrix in Machine Learning](https://www.geeksforgeeks.org/confusion-matrix-machine-learning/)
+   - [Google ML Crash Course: Classification - ROC Curve and AUC](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc)
